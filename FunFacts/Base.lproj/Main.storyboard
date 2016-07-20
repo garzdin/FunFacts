@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="An interesting fact goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4p-Fk-guq">
+                                <rect key="frame" x="192" y="280" width="216" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Jlb-9O-8Gv"/>
+                                    <constraint firstAttribute="width" constant="216" id="x6h-NX-fQa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jlb-9O-8Gv"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWb-Zv-q8i">
+                                <rect key="frame" x="192" y="459" width="216" height="61"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="Bt8-Kp-6N9"/>
+                                    <constraint firstAttribute="height" constant="61" id="MrH-sa-IIg"/>
+                                    <constraint firstAttribute="height" constant="61" id="NSg-iC-Fgz"/>
+                                    <constraint firstAttribute="width" constant="216" id="PiK-Bl-8yA"/>
+                                    <constraint firstAttribute="height" constant="61" id="V09-Ah-pNY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="61" id="fxH-9k-qom"/>
+                                    <constraint firstAttribute="width" constant="216" id="gi1-o5-LcK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Another Fun Fact"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Bt8-Kp-6N9"/>
+                                        <exclude reference="MrH-sa-IIg"/>
+                                        <exclude reference="NSg-iC-Fgz"/>
+                                        <exclude reference="PiK-Bl-8yA"/>
+                                        <exclude reference="fxH-9k-qom"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="LD1-jn-R5Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cv-rK-LkH">
+                                <rect key="frame" x="192" y="100" width="216" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="iGA-je-Cla"/>
+                                    <constraint firstAttribute="height" constant="22" id="jUw-3v-Vwl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="H4p-Fk-guq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0eV-rr-jYJ"/>
+                            <constraint firstAttribute="trailing" secondItem="UWb-Zv-q8i" secondAttribute="trailing" constant="50" id="B4q-jP-6SQ"/>
+                            <constraint firstItem="UWb-Zv-q8i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DVI-PK-AWP"/>
+                            <constraint firstItem="H4p-Fk-guq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EYL-p5-4mf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H4p-Fk-guq" secondAttribute="trailing" constant="169" id="HKn-jM-oi8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H4p-Fk-guq" secondAttribute="trailing" constant="30" id="Isi-5u-7BQ"/>
+                            <constraint firstItem="H4p-Fk-guq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KuC-nz-zjC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWb-Zv-q8i" secondAttribute="bottom" constant="80" id="LKD-QZ-TXO"/>
+                            <constraint firstItem="H4p-Fk-guq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="MEN-jJ-x7f"/>
+                            <constraint firstItem="H4p-Fk-guq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WX9-2T-CDE"/>
+                            <constraint firstItem="H4p-Fk-guq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="213" id="YAs-Xp-7vk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWb-Zv-q8i" secondAttribute="bottom" constant="122" id="YYX-HA-HeJ"/>
+                            <constraint firstItem="H4p-Fk-guq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZXm-Y9-kI0"/>
+                            <constraint firstItem="7Cv-rK-LkH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="fzU-RU-CBD"/>
+                            <constraint firstItem="UWb-Zv-q8i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="192" id="hFB-pI-VkZ"/>
+                            <constraint firstItem="UWb-Zv-q8i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="172" id="iut-5s-gjC"/>
+                            <constraint firstItem="UWb-Zv-q8i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jzz-I6-K6T"/>
+                            <constraint firstItem="7Cv-rK-LkH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ooa-rp-B8H"/>
+                            <constraint firstItem="UWb-Zv-q8i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="200" id="r6x-fU-0Aa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UWb-Zv-q8i" secondAttribute="trailing" constant="144" id="w0s-0G-FAh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWb-Zv-q8i" secondAttribute="bottom" constant="117" id="xdE-Pq-rHT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWb-Zv-q8i" secondAttribute="bottom" constant="90" id="zgp-Rq-NUE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0eV-rr-jYJ"/>
+                                <exclude reference="EYL-p5-4mf"/>
+                                <exclude reference="HKn-jM-oi8"/>
+                                <exclude reference="Isi-5u-7BQ"/>
+                                <exclude reference="MEN-jJ-x7f"/>
+                                <exclude reference="WX9-2T-CDE"/>
+                                <exclude reference="YAs-Xp-7vk"/>
+                                <exclude reference="B4q-jP-6SQ"/>
+                                <exclude reference="hFB-pI-VkZ"/>
+                                <exclude reference="iut-5s-gjC"/>
+                                <exclude reference="jzz-I6-K6T"/>
+                                <exclude reference="r6x-fU-0Aa"/>
+                                <exclude reference="w0s-0G-FAh"/>
+                                <exclude reference="YYX-HA-HeJ"/>
+                                <exclude reference="xdE-Pq-rHT"/>
+                                <exclude reference="zgp-Rq-NUE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="funFactLabel" destination="H4p-Fk-guq" id="kbF-e7-hc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="654"/>
+        </scene>
+    </scenes>
+</document>
